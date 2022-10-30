@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,39 +8,65 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
     <title>Welcome!</title>
 </head>
-<body onload="loaded()">
-    <div class="nav" id="nav">
-        <img src="images/bitlogo.jpg" width="100px" alt="BIT Logo">
-        <a href="index.html"><p>Student Feedback System</p></a>
+
+<body onload="load()" onscroll="loaded()">
+    <div class="header">
+        <div class="nav" id="nav">
+            <div class="img">
+                <img id="img" src="images/bitlogo.jpg" alt="BIT Logo">
+            </div>
+            <h2 id="heading">Student Feedback System</h2>
+            <div class="links" id="links">
+                <a href="#" class="active link">Home</a>
+                <a href="#" class="link">About Us</a>
+                <a href="#" class="link">Contact Us</a>
+            </div>
+        </div>
+        <div class="spaces"></div>
+        <div class="carousel" id="carousel">
+            <div class="mySlides fade">
+                <img src="https://www.ashishbhonde.com/img/bajaj-inst/9.jpg" width="100%" height="100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://www.ashishbhonde.com/img/bajaj-inst/42.jpg" width="100%" height="100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="https://www.ashishbhonde.com/img/bajaj-inst/12.jpg" width="100%" height="100%">
+            </div>
+        </div>
+        <p class="heading" id="head">SELECT USER...</p>
+        <div class="main">
+            <a href="admin.html">
+                <div class="cards" id="card1">
+                    <img src="images/admin.png" id="imgcard1" width="40%" alt="Admin">
+                    <p>Admin</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="cards" id="card2">
+                    <img src="images/principal.png" width="40%" alt="Principal">
+                    <p>Principal</p>
+                </div>
+            </a>
+            <a href="#"></a>
+            <div class="cards" id="card3">
+                <img src="images/teacher.png" width="40%" alt="Teacher">
+                <p>Teacher</p>
+            </div></a>
+            <a href="#"></a>
+            <div class="cards" id="card4">
+                <img src="images/student.png" id="imgcard4" width="40%" alt="Student">
+                <p>Student</p>
+            </div></a>
+        </div>
     </div>
-    <div class="links" id="links">
-        <a href="index.html">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
+    <div class="footer">
+        <p>&copy;Copyright 2022 | Bajaj Institute of Technology, Wardha</p>
     </div>
-    <p class="heading" id="head">Select User...</p>
-    <div class="main">
-        <a href="http://127.0.0.1:5500/login.html"><div class="cards" id="card1">
-            <img src="images/admin.png" id="imgcard1" width="40%" alt="Admin">
-            <p>Admin</p>
-        </div></a>
-        <a href="#"><div class="cards" id="card2">
-            <img src="images/principal.png" width="40%" alt="Principal">
-            <p>Principal</p>
-        </div></a>
-        <a href="#"><div class="cards" id="card3">
-            <img src="images/teacher.png" width="40%" alt="Teacher">
-            <p>Teacher</p>
-        </div></a>
-        <a href="#"><div class="cards" id="card4">
-            <img src="images/student.png" id="imgcard4" width="40%" alt="Student">
-            <p>Student</p>
-        </div></a>
-    </div>
-    <div class="footer">&copy;Copyright 2022 | Bajaj Institute of Technology, Wardha</div>
     <script src="js/index.js"></script>
 </body>
+
 </html>
