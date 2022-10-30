@@ -44,7 +44,7 @@ function loaded() {
         // var str = "<div class='img'><img id='img' src='images/bitlogo.jpg' alt='BIT Logo'></div><h2 id='heading'>Student Feedback System</h2><div class='links' id='links'><a href='#' class='active link'>Home</a><a href='#' class='link'>About Us</a><a href='#' class='link'>Contact Us</a></div>";          
         // ele.innerHTML = str;
     }
-    if (pageYOffset > length1) {
+    if (pageYOffset >= length1) {
         h.style.marginLeft = "0%";
         h.style.color = "#102543";
     }
@@ -64,7 +64,7 @@ function loaded() {
         card3.style.marginRight = "20px";
         card4.style.marginLeft = "20px";
     }
-    if (pageYOffset < length3) {
+    else {
         card3.style.marginRight = "150px";
         card4.style.marginLeft = "150px";
     }
