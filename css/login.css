@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Jost', sans-serif;
+	line-height: 1.6;
 }
 
 body {
@@ -34,12 +35,15 @@ body {
 	position: initial;
 	background-color: #e4edf9;
 	margin-top: 1%;
+	text-align: center;
 	height: 450px;
 }
-
+.right:hover{
+	border: 1000px #c9d3e3;
+}
 .login {
-	padding: 0 10%;
-	text-align: center;
+	padding: 5% 10%;
+	/* text-align: center; */
 	width: 100%;
 }
 
@@ -58,7 +62,6 @@ input[type=password] {
 	border: 2px solid #1B81BF;
 	box-sizing: border-box;
 }
-
 button {
 	background-color: #1B81BF;
 	width: 80%;
