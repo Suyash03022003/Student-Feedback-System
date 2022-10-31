@@ -8,12 +8,14 @@ function loaded() {
     let length1 = 150;
     let length2 = 300;
     let length3 = 700;
+    let length4 = 850;
     var img = document.getElementById("img");
     var h = document.getElementById("head");
     var card1 = document.getElementById("card1");
     var card2 = document.getElementById("card2");
     var card3 = document.getElementById("card3");
     var card4 = document.getElementById("card4");
+    var card5 = document.getElementById("card5");
     var ele = document.getElementById("nav");
     var l = document.getElementById("links");
     var link = document.getElementsByClassName("link");
@@ -57,16 +59,22 @@ function loaded() {
         card2.style.marginLeft = "20px";
     }
     else {
-        card1.style.marginRight = "150px";
-        card2.style.marginLeft = "150px";
+        card1.style.marginRight = "200px";
+        card2.style.marginLeft = "200px";
     }
     if (pageYOffset >= length3) {
         card3.style.marginRight = "20px";
         card4.style.marginLeft = "20px";
     }
     else {
-        card3.style.marginRight = "150px";
-        card4.style.marginLeft = "150px";
+        card3.style.marginRight = "200px";
+        card4.style.marginLeft = "200px";
+    }
+    if (pageYOffset >= length4) {
+        card5.style.marginTop = "20px";
+    }
+    else {
+        card5.style.marginTop = "200px";
     }
 }
 
