@@ -50,7 +50,7 @@ input[type=text], input[type=password] {
 	box-sizing: border-box;   
 }  
 button {   
-	/* background-color: #1B81BF;    */
+	background-color: #1B81BF;   
 	width: 80%;  
 	color: rgb(11, 11, 11);   
 	font-size: 15px;
