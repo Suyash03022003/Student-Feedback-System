@@ -5,48 +5,43 @@
 	font-family: 'Jost', sans-serif;
 	line-height: 1.6;
 }
-
 body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: #102543;
 }
-
 .full {
 	display: grid;
 	grid-template-columns: 4fr 4fr;
 	align-items: center;
 	justify-content: center;
 }
-
 .left {
 	position: initial;
 	width: 550px;
 	height: 450px;
 	margin-top: 1%;
+	box-shadow: 0px 1px 3px 3px #90c0fa;
 }
-
 .left img {
 	object-fit: cover;
 }
-
 .right {
 	position: initial;
 	background-color: #e4edf9;
 	margin-top: 1%;
 	text-align: center;
 	height: 450px;
+	box-shadow: 0px 1px 3px 3px #90c0fa;
 }
 .right:hover{
 	border: 1000px #c9d3e3;
 }
 .login {
 	padding: 5% 10%;
-	/* text-align: center; */
 	width: 100%;
 }
-
 h2 {
 	text-align: center;
 	width: 100%;
@@ -73,9 +68,17 @@ button {
 	cursor: pointer;
 	transition: 0.4s;
 }
-
+.cbox{
+	text-align: left;
+	margin-left: 50px;
+}
+.cbox a{
+	padding-left: 105px;
+	color: blue;
+}
 .submit:hover {
-	/* border: 2px solid #102543; */
 	transform: scale(1.02, 1.02);
 	background-color: #3c98d2;
+	transform: scale(1.02);
+    transition: all 1s ease;
 }

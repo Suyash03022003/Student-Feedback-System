@@ -5,7 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin</title>
-  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="/css/admin.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,12 +16,10 @@
     <div class="left">
       <h2>ADMIN</h2>
       <div class="link">
-        <a href="admin_clgdet.html">College details</a><br><br>
-        <a href="">Branch</a><br><br>
-        <a href="">Subject</a><br><br>
-        <a href="">Faculty</a><br><br>
-        <a href="">Generate Feedback</a><br><br>
-        <a href="">View Feedback</a><br><br>
+        <a href="ManageUser.html">Manage User</a><br><br>
+        <a href="Subject.html">Subject</a><br><br>
+        <a href="GFeedback.html">Generate Feedback</a><br><br>
+        <a href="VFeedback.html">View Feedback</a><br><br>
       </div>
     </div>
     <div class="right">
@@ -27,62 +28,58 @@
       <p>Dashboard</p>
       <br>
       <br>
-
-      <div class="cards1">
-        <div class="up-card1">
-          <h3>College Details</h3>
-        </div>
-        <div class="title1">
-          <a href="admin_clgdet.html" class="button">View</a>
-        </div>
-        <br>
-        <div class="up-card1">
-          <h3>Add Faculty</h3>
-        </div>
-        <div class="title2">
-          <a href="#" class="button">View</a>
-        </div>
+      <div class="cards">
+      <div class="card">
+        <div class="up-card" >
+          <img src="/images/ManageUser.png" alt="Manage User">
+          <h3>Manage Users</h3>
+          <a href="ManageUser.html">
+          <div class="view">
+          <button>View</button>          
+          </div>
+          </a>
+        </div>      
       </div>
 
-      <div class="cards1">
-        <div class="up-card2">
-          <h3>Add Branches</h3>
+      <div class="card">
+      <div class="up-card">
+        <img src="/images/Subject.png" alt="Manage User">
+        <h3>Add Subject</h3>
+        <a href="Subject.html">
+        <div class="view">
+        <button>View</button>        
         </div>
-        <div class="title1">
-          <a href="#" class="button">View</a>
-        </div>
-        <br>
-        <div class="up-card2">
-          <h3>Generate Feedback</h3>
-        </div>
-        <div class="title2">
-          <a href="#" class="button">View</a>
-        </div>
+      </a>
       </div>
-
-      <div class="cards1">
-        <div class="up-card3">
-          <h3>Add Subjects</h3>
-        </div>
-        <div class="title3">
-          <a href="#" class="button">View</a>
-        </div>
-        <br>
-
-
-        <div class="up-card3">
-          <h3>View Feedback</h3>
-        </div>
-        <div class="title3">
-          <a href="#" class="button">View</a>
-        </div>
-      </div>
-
-
     </div>
 
+    <div class="card">
+      <div class="down-card">
+        <img src="/images/gfeedback.jpg" alt="Manage User">
+        <h3>Generate Feedback</h3>
+        <a href="GFeedback.html">
+        <div class="view">
+        <button>View</button>
+        </div>
+      </a>
+      </div>
+    </div>
 
+      <div class="card">
+      <div class="down-card">
+        <img src="/images/vfeedback.jpg" alt="Manage User">
+        <h3>View Feedback</h3>
+        <a href="VFeedback.html">
+        <div class="view">
+        <button>View</button>
+        </div>
+      </a>
+      </div>
+    </div>
   </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 
