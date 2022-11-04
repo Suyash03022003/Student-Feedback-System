@@ -14,6 +14,7 @@ body {
 .full {
 	display: grid;
 	grid-template-columns: 4fr 4fr;
+	box-shadow: 0px 1px 10px #90c0fa;
 	align-items: center;
 	justify-content: center;
 }
@@ -21,8 +22,6 @@ body {
 	position: initial;
 	width: 550px;
 	height: 450px;
-	margin-top: 1%;
-	box-shadow: 0px 1px 3px 3px #90c0fa;
 }
 .left img {
 	object-fit: cover;
@@ -30,13 +29,8 @@ body {
 .right {
 	position: initial;
 	background-color: #e4edf9;
-	margin-top: 1%;
 	text-align: center;
 	height: 450px;
-	box-shadow: 0px 1px 3px 3px #90c0fa;
-}
-.right:hover{
-	border: 1000px #c9d3e3;
 }
 .login {
 	padding: 5% 10%;

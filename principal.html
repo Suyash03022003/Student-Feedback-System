@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>principal</title>
+  <style>
+    * {
+      margin: 0%;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-size: 20px;
+      overflow-x: hidden;
+      background-color: #E4EDF9;
+    }
+
+    .s2 {
+      margin: -1% -1% -1% 19.7%;
+      color: black;
+      background-color: #E4EDF9;
+    }
+
+    .s1 {
+      height: 100%;
+      width: 200px;
+      background-color: #111;
+      padding-top: 22px;
+      position: fixed;
+      z-index: -5;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      width: 20%;
+    }
+
+    .s1 a {
+      padding: 20px 8px 8px 30px;
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+      display: block;
+    }
+
+    .s1 a:hover {
+      color: #f1f1f19c;
+      display: block;
+    }
+
+    h1 {
+      color: white;
+      padding-left: 7%;
+      padding-bottom: 18%;
+      padding-top: 7%;
+      font-size: 35px;
+    }
+
+
+    .class1 {
+      margin-top: 7%;
+      margin-left: 10%;
+      width: 400px;
+      height: 300px;
+      float: left;
+      border-radius: 40px;
+      background: linear-gradient(45deg, rgb(106, 120, 209), rgb(0, 164, 189));
+      text-align: center;
+      transition: 0.3s;
+      padding: 4% 2% 2% 2%;
+    }
+
+    .class1:hover {
+      transform: scale(1.1, 1.1)
+    }
+
+    #s5 {
+      font-size: 30px;
+      padding: 70px 0px 70px 0px;
+      color: black;
+    }
+
+    .button {
+      text-align: center;
+      color: #fff;
+      padding: 10px 15px 10px 15px;
+      border-radius: 10px;
+      background-color: #b8bcc2;
+      /* box-shadow: 0 9px #999; */
+    }
+
+    .button:hover {
+      background-color: #8ee4e9;
+    }
+
+    .button:active {
+      background-color: #76f47b;
+      box-shadow: 0 4px #666;
+      transform: translateY(4px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="img">
+      <img id="img" src="images/bitlogo.jpg" alt="BIT Logo">
+    </div>
+    <h2 id="heading">Student Feedback System</h2>
+    <div class="links" id="links">
+      <a href="index.html" class="link">Home</a>
+      <a href="#" class="link">About Us</a>
+      <a href="#" class="link">Contact Us</a>
+      <img src="images/user.png" alt="User" width="7%" style="border-radius: 50%;">
+    </div>
+  </div>
+  <div class="s1">
+    <h1>Principal</h1>
+    <a href="http://127.0.0.1:5500/faculty.html">Faculty</a>
+    <a href="http://127.0.0.1:5500/editfeedback.html">View & Edit Feedback</a>
+    <a href="#">Comparative Results</a>
+    <a href="http://127.0.0.1:5500/addQue.html">Add Question</a>
+    <a href="#"></a>
+  </div>
+
+  <div class="s2">
+    <div class="main">
+      <div class="class1">
+        <h1 id="s5">Faculty</h1>
+        <button class="button"><a href="http://127.0.0.1:5500/faculty.html">View</a></button>
+      </div>
+      <div class="class1">
+        <h1 id="s5">View & Edit Feedback</h1>
+        <button class="button"><a href="#">View</a></button>
+      </div>
+      <div class="class1">
+        <h1 id="s5">Comparative Results</h1>
+        <button class="button"><a href="#">View</a></button>
+      </div>
+      <div class="class1">
+        <h1 id="s5">Add Question</h1>
+        <button class="button"><a href="#">View</a></button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
