@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
     <title>Welcome!</title>
 </head>
+
 <body>
     <div class="nav">
         <div class="img">
@@ -32,6 +34,126 @@
                 <li><a href="viewfeedback.html">View Feedback</a></li>
             </ul>
         </div>
+        <div class="right">
+            <h1>Generate Feedback</h1>
+            <p>Dashboard/<span> Generate Feedback</span></p>
+            <div class="options">
+                <div class="option" id="option">
+                    <p class="head">YEAR:</p>
+                    <p class="dropdown" id="dropdown1">Select</p>
+                    <div class="drop" id="drop">
+                        <p onclick="clicked1('I')">I</p>
+                        <p onclick="clicked1('II')">II</p>
+                        <p onclick="clicked1('III')">III</p>
+                        <p onclick="clicked1('IV')">IV</p>
+                    </div>
+                </div>
+                <div class="option" id="option">
+                    <p class="head">Branch:</p>
+                    <p class="dropdown" id="dropdown2">Select</p>
+                    <div class="drop" id="drop">
+                        <p onclick="clicked2('Computer')">Computer</p>
+                        <p onclick="clicked2('Electrical')">Electrical</p>
+                        <p onclick="clicked2('Mechanical')">Mechanical</p>
+                        <p onclick="clicked2('Civil')">Civil</p>
+                    </div>
+                </div>
+                <div class="option" id="option">
+                    <p class="head">Semester:</p>
+                    <p class="dropdown" id="dropdown3">Select</p>
+                    <div class="drop" id="drop">
+                        <p onclick="clicked3('I')">I</p>
+                        <p onclick="clicked3('II')">II</p>
+                        <p onclick="clicked3('III')">III</p>
+                        <p onclick="clicked3('IV')">IV</p>
+                        <p onclick="clicked3('V')">V</p>
+                        <p onclick="clicked3('VI')">VI</p>
+                        <p onclick="clicked3('VII')">VII</p>
+                        <p onclick="clicked3('VIII')">VIII</p>
+                    </div>
+                </div>
+                <div class="option" id="option">
+                    <p class="head">Section:</p>
+                    <p class="dropdown" id="dropdown4">Select</p>
+                    <div class="drop" id="drop">
+                        <p onclick="clicked4('A')">A</p>
+                        <p onclick="clicked4('B')">B</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="User">
+                <div class="Filter">
+                    <label for="User">Select Year:</label>
+                    <select name="User" id="User">
+                        <option value=""></option>
+                        <option value="I">I</option>
+                        <option value="II">II</option>
+                        <option value="III">III</option>
+                        <option value="IV">IV</option>
+                    </select>
+                    <label for="Branch" id="Branch">Select Brach:</label>
+                    <select name="User" id="User">
+                        <option value=""></option>
+                        <option value="Coputer">Computer</option>
+                        <option value="Electrical">Electrical</option>
+                        <option value="Mechanical">Mechanical</option>
+                        <option value="Civil">Civil</option>
+                    </select>
+                </div><br><br>  
+                <div class="Filter">
+                    <label for="User">Select Semester:</label>
+                    <select name="User" id="User">
+                        <option value=""></option>
+                        <option value="I">I</option>
+                        <option value="II">II</option>
+                        <option value="III">III</option>
+                        <option value="IV">IV</option>
+                        <option value="V">V</option>
+                        <option value="VI">VI</option>
+                        <option value="VII">VII</option>
+                        <option value="VIII">VIII</option>
+                    </select>
+                    <label for="Branch" id="Branch2">Select Section:</label>
+                    <select name="User" id="User">
+                        <option value=""></option>
+                        <option value="A">A</option>
+                        <option value="Br">B</option>
+                    </select>
+                </div>
+            </div> -->
+            <div class="questions">
+                <div class="question">Q. Teacher comes to class on time: <br><input type="radio" name="question1">Excellent<input type="radio" name="question1">Very Good<input type="radio" name="question1">Good<input type="radio" name="question1">Average<input type="radio" name="question1">Poor</div>
+                <div class="question">Q. Teacher Speak clear and Audible: <br><input type="radio" name="question2">Excellent<input type="radio" name="question2">Very Good<input type="radio" name="question2">Good<input type="radio" name="question2">Average<input type="radio" name="question2">Poor</div>
+                <div class="question">Q. Teacher Writes and Draw Legibly:<br><input type="radio" name="question3">Excellent<input type="radio" name="question3">Very Good<input type="radio" name="question3">Good<input type="radio" name="question3">Average<input type="radio" name="question3">Poor</div>
+                <div class="question">Q. Teacher courteous and impartial in dealing with students:<br><input type="radio" name="question4">Excellent<input type="radio" name="question4">Very Good<input type="radio" name="question4">Good<input type="radio" name="question4">Average<input type="radio" name="question4">Poor</div>
+                <div class="question">Q. Teacher is promot in valuing and returning the answer scripts providing feedback on performance<br><input type="radio" name="question5">Excellent<input type="radio" name="question5">Very Good<input type="radio" name="question5">Good<input type="radio" name="question5">Average<input type="radio" name="question5">Poor</div>
+                <div class="question">Q. Teacher comes well planned and prepared:<br><input type="radio" name="question6">Excellent<input type="radio" name="question6">Very Good<input type="radio" name="question6">Good<input type="radio" name="question6">Average<input type="radio" name="question6">Poor</div>
+                <div class="question">Q. Teacher provide Example of the concepts/principles, explanation are done effectively:<br><input type="radio" name="question7">Excellent<input type="radio" name="question7">Very Good<input type="radio" name="question7">Good<input type="radio" name="question7">Average<input type="radio" name="question7">Poor</div>
+                <div class="question">Q. Teacher encourages Qestioning/raising doubts by students and answer them well:<br><input type="radio" name="question8">Excellent<input type="radio" name="question8">Very Good<input type="radio" name="question8">Good<input type="radio" name="question8">Average<input type="radio" name="question8">Poor</div>
+                <div class="question">Q. Teacher engages classes reguraly and maintain discipline:<br><input type="radio" name="question9">Excellent<input type="radio" name="question9">Very Good<input type="radio" name="question9">Good<input type="radio" name="question9">Average<input type="radio" name="question9">Poor</div>
+                <div class="question">Q. Teacher covers syllabus completely at appropriate space:<br><input type="radio" name="question10">Excellent<input type="radio" name="question10">Very Good<input type="radio" name="question10">Good<input type="radio" name="question10">Average<input type="radio" name="question10">Poor</div>
+            </div>
+            <div class="add">+</div>
+        </div>
     </div>
+    <script>
+        var dropdown = document.getElementById("dropdown1");
+        var dropdown = document.getElementById("dropdown2");
+        var dropdown = document.getElementById("dropdown3");
+        var dropdown = document.getElementById("dropdown4");
+        function clicked1(char) {
+            dropdown1.innerHTML = char;
+        }
+        function clicked2(char) {
+            dropdown2.innerHTML = char;
+        }
+        function clicked3(char) {
+            dropdown3.innerHTML = char;
+        }
+        function clicked4(char) {
+            dropdown4.innerHTML = char;
+        }
+    </script>
 </body>
+
 </html>
