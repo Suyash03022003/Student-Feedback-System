@@ -5,6 +5,7 @@
   font-family: 'Jost', sans-serif;
 }
 body {
+  background-color: #E4EDF9;
 	justify-content: center;
 	align-items: center;
 }
@@ -89,32 +90,54 @@ body {
 	grid-template-columns: 1fr 4fr; 
 }
 .left {
-	position: initial;
-	background-color: #102543;
+  height: 1000px;
+  background-color: #102543;
   color: white;
-  font-family: 'Times New Roman', Times, serif;
-  padding-top: 40px;
-  padding-left: 20px;
   border-top: 2px solid #E4EDF9;
+  box-shadow: 1px 0px 5px #102543;
 }
-.left .link{
-    padding-top: 65px;
-    text-align: left;
+
+.left h1 {
+margin: 10% 5%;
+text-decoration: underline;
 }
-a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 21px;
+
+.left ul {
+list-style-type: none;
+margin: 10% 7%;
 }
-a:hover{
-    font-size: 21px;
-    padding: 3px;
-    padding-bottom: 8px;
-    border-bottom-style: solid;
-    border-bottom-width: 3.1px;
-    transform: scale(1);
-    transition: all 1s ease;
+
+.left li {
+cursor: pointer;
+font-size: 21px;
+margin-top: 7%;
+transition: 0.5s;
 }
+
+.left li:hover {
+transform: scale(1.02, 1.02);
+}
+
+.left li a {
+text-decoration: none;
+color: white;
+}
+a {
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-size: 21px;
+}
+
+a:hover .active link {
+font-size: 21px;
+padding: 3px;
+padding-bottom: 8px;
+border-bottom-style: solid;
+border-bottom-width: 3.1px;
+transform: scale(1);
+transition: all 1s ease;
+}
+
 .right {
     background-color: #e4edf9;
 	  position: initial;
@@ -126,7 +149,4 @@ p{
     padding: 12px;
     background-color: #F5F5F5;
     color: #428BCA;
-}
-h2{
-  text-decoration: underline;
 }
