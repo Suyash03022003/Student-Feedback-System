@@ -1,91 +1,177 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Jost', sans-serif;
 }
+
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
 }
+
+.nav {
+  background-color: #102543;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  height: 70px;
+  box-shadow: 0px 1px 5px #102543;
+  transition: 0.5s;
+}
+
+.nav .img {
+  transition: 0.5s;
+  margin-left: 2%;
+  display: flex;
+  padding: 1%;
+  float: left;
+  width: 8%;
+  align-items: center;
+}
+
+#img {
+  transition: 0.5s;
+}
+
+.nav .img img {
+  width: 60%;
+}
+
+.nav h2 {
+  transition: 0.5s;
+  color: white;
+  display: flex;
+  height: 70px;
+  float: left;
+  width: 30%;
+  align-items: center;
+  padding: 1%;
+}
+
+.nav .links {
+  margin-right: 5%;
+  transition: 0.5s;
+  display: flex;
+  height: 70px;
+  float: left;
+  width: 55%;
+  align-items: center;
+  justify-content: right;
+  gap: 4%;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  transition: 0.2s;
+}
+
+.links .active {
+  font-size: 23px;
+}
+
+.links .active,
+.links a:hover {
+  font-weight: bold;
+}
+
+.spaces {
+  height: 70px;
+}
+
 .full {
-	width: 100%;
-	max-width: 100%;
-	min-height: 100%;
-	margin: 0px;
-	display: grid;
-	grid-template-columns: 1fr 4fr; 
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
 }
+
 .left {
-	position: initial;
-	background-color: #102543;
+  position: initial;
+  background-color: #102543;
   color: white;
   font-family: 'Times New Roman', Times, serif;
   padding-top: 40px;
   padding-left: 20px;
+  box-shadow: 0px 1px 5px #ffffff;
 }
-.link{
-    padding-top: 65px;
-    text-align: left;
+
+.link .left{
+  padding-top: 65px;
+  text-align: left;
 }
-a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 21px;
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 21px;
 }
-a:hover .active link{
-    font-size: 21px;
-    padding: 3px;
-    padding-bottom: 8px;
-    border-bottom-style: solid;
-    border-bottom-width: 3.1px;
-    transform: scale(1);
-    transition: all 1s ease;
+
+a:hover .active link {
+  font-size: 21px;
+  padding: 3px;
+  padding-bottom: 8px;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
+  transform: scale(1);
+  transition: all 1s ease;
 }
+
 .right {
-    background-color: #e4edf9;
-	  position: initial;
-	  padding: 30px;
-    color: rgb(5, 5, 5);
+  background-color: #e4edf9;
+  position: initial;
+  padding: 30px;
+  color: rgb(5, 5, 5);
 }
-p{
-    font-size: 20px;
-    padding: 12px;
-    background-color: #F5F5F5;
-    color: #428BCA;
+
+p {
+  font-size: 20px;
+  padding: 12px;
+  background-color: #F5F5F5;
+  color: #428BCA;
 }
-.User{
-  background-color:#102543;
+
+.User {
+  background-color: #102543;
   box-sizing: border-box;
   width: 100%;
   height: 12%;
-  border-radius: 10px;
 }
-.filter{
+
+.filter {
   margin-left: 1%;
-  padding-top: 1.1%;
+  padding-top: 1.8%;
   font-size: 20px;
   color: white;
 }
-option{
+
+option {
   background-color: #f4eaea;
   font-size: 22px;
   padding-left: 25%;
 }
-#User{
+
+#User {
   font-size: 20px;
   background-color: #a1ccf2;
   border: none;
   border-radius: 5%;
   padding: 0.5%;
 }
-#Branch{
+
+#Branch {
   padding-left: 13%;
 }
-h2{
+
+h2 {
   color: white;
 }
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -93,7 +179,9 @@ table {
   margin-top: 50px;
   padding-top: 100%;
 }
-td, th {
+
+td,
+th {
   border: 1px solid #4a4646;
   text-align: center;
   padding: 8px;
@@ -102,7 +190,8 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-button{
+
+button {
   font-size: 18px;
   background-color: #1B81BF;
   border: none;
@@ -112,7 +201,8 @@ button{
   margin-left: 89%;
   margin-top: 2%;
 }
-button:hover{
+
+button:hover {
   background-color: #428BCA;
   transform: scale(1.02);
   transition: 0.4s;
