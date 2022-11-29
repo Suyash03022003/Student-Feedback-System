@@ -1,4 +1,3 @@
-
 <html lang="en">
 
 <head>
@@ -26,20 +25,13 @@
     </div>
   </div>
   <div class="spaces"></div>
-  <div class="full">
+  <div class="main">
     <div class="left">
-      <h2>PRINCIPAL</h2>
-      <!-- <div class="link">
-        <a href="faculty.html" class="active link">Manage Faculty</a><br><br>
-        <a href="Subject.html">View & Edit Feedback</a><br><br>
-        <a href="GFeedback.html">Comparative Result</a><br><br>
-        <a href="VFeedback.html">Add Question</a><br><br>
-      </div> -->
+      <h1>PRINCIPAL</h1>
       <ul>
-        <li><a href="generatefeedback.html">Generate Feedback</a></li>
+        <li class="active"><a href="generatefeedback.html">Manage Faculty</a></li>
         <li><a href="viewfeedback.html">View Feedback</a></li>
-
-    </ul>
+      </ul>
     </div>
     <div class="right">
       <h1>Manage Faculty</h1>
@@ -47,22 +39,26 @@
       <p>Dashboard/Manage Faculty</p>
       <br>
       <div class="User">
-        <div class="Filter">
-          <div>
-            <label for="User">Select Year:</label>
-            <select name="User" id="User">
-              <option value="Principal">1st year</option>
-              <option value="Teacher">2nd year</option>
-              <option value="Student">3rd year</option>
-              <option value="Student">4th year</option>
-            </select>
-            <label for="Branch" id="Branch">Select Department:</label>
-            <select name="User" id="User">
-              <option value="Principal">CE</option>
-              <option value="Teacher">EE</option>
-              <option value="Student">ME</option>
-              <option value="Student">Civil</option>
-            </select>
+        <div class="options">
+          <div class="option" id="option">
+            <p class="head">YEAR:</p>
+            <p class="dropdown" id="dropdown1">Select</p>
+            <div class="drop" id="drop">
+              <p onclick="clicked1('I')">I</p>
+              <p onclick="clicked1('II')">II</p>
+              <p onclick="clicked1('III')">III</p>
+              <p onclick="clicked1('IV')">IV</p>
+            </div>
+          </div>
+          <div class="option" id="option">
+            <p class="head">Branch:</p>
+            <p class="dropdown" id="dropdown2">Select</p>
+            <div class="drop" id="drop">
+              <p onclick="clicked2('Computer')">Computer</p>
+              <p onclick="clicked2('Electrical')">Electrical</p>
+              <p onclick="clicked2('Mechanical')">Mechanical</p>
+              <p onclick="clicked2('Civil')">Civil</p>
+            </div>
           </div>
         </div>
         <br>
@@ -121,6 +117,16 @@
         <button>Add User</button>
       </div>
     </div>
+    <script>
+      var dropdown = document.getElementById("dropdown1");
+      var dropdown = document.getElementById("dropdown2");
+      function clicked1(char) {
+        dropdown1.innerHTML = char;
+      }
+      function clicked2(char) {
+        dropdown2.innerHTML = char;
+      }
+    </script>
 </body>
 
 </html>
