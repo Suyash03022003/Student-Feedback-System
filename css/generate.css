@@ -215,8 +215,22 @@ input {
 
 .question img {
     vertical-align: middle;
+    margin-right: 20px;
+    margin-top: -5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.question img:hover {
+    transform: scale(1.05, 1.05);
 }
 
 .add:hover {
     transform: scale(1.03, 1.03);
+}
+
+span input {
+    padding: 10px;
+    width: 70%;
+    margin: 0;
 }

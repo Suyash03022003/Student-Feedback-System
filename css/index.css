@@ -24,6 +24,7 @@ body {
     margin-left: 2%;
     display: flex;
     padding: 1%;
+    height: 100%;
     float: left;
     width: 8%;
     align-items: center;
@@ -146,12 +147,12 @@ a {
 }
 
 .cards p {
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .cards img {
-    height: 130px;
-    margin-top: 50px;
+    height: 40%;
+    margin-top: 20%;
     margin-bottom: 10px;
 }
 
@@ -178,14 +179,14 @@ a {
 .cards {
     text-decoration: none;
     color: black;
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 20px;
     background-color: #F3FCFF;
     text-align: center;
     margin: 20px;
-    height: 25%;
+    height: 25vw;
     display: inline-block;
-    width: 25%;
+    width: 25vw;
     cursor: pointer;
     transition: 0.5s;
     border: 2px solid #102543;

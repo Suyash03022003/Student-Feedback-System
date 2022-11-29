@@ -82,46 +82,54 @@
                 </div>
             </div>
             <div class="questions">
-                <div class="question"><img src="images/edit.png" width="30px" height="auto"> Q. Teacher comes to class on time: <br><input type="radio"
+                <div class="question"><img onclick="img(1)" src="images/editques.png" width="25px" height="auto"><span
+                        class="span">Does the teacher
+                        explain the principle/theory of experiment?</span><br><input type="radio"
                         name="question1">Excellent<input type="radio" name="question1">Very Good<input type="radio"
                         name="question1">Good<input type="radio" name="question1">Average<input type="radio"
                         name="question1">Poor</div>
-                <div class="question">Q. Teacher Speak clear and Audible: <br><input type="radio"
+                <div class="question"><img onclick="img(2)" src="images/editques.png" width="25px" height="auto"><span
+                        class="span">Does the teacher
+                        demonstrate the experiment to be performed ?</span><br><input type="radio"
                         name="question2">Excellent<input type="radio" name="question2">Very Good<input type="radio"
                         name="question2">Good<input type="radio" name="question2">Average<input type="radio"
                         name="question2">Poor</div>
-                <div class="question">Q. Teacher Writes and Draw Legibly:<br><input type="radio"
+                <div class="question"><img onclick="img()" src="images/editques.png" width="25px" height="auto"><span
+                        class="span">Is the teacher available
+                        in the lab all the time during practical ?</span><br><input type="radio"
                         name="question3">Excellent<input type="radio" name="question3">Very Good<input type="radio"
                         name="question3">Good<input type="radio" name="question3">Average<input type="radio"
                         name="question3">Poor</div>
-                <div class="question">Q. Teacher courteous and impartial in dealing with students:<br><input
-                        type="radio" name="question4">Excellent<input type="radio" name="question4">Very Good<input
-                        type="radio" name="question4">Good<input type="radio" name="question4">Average<input
-                        type="radio" name="question4">Poor</div>
-                <div class="question">Q. Teacher is promot in valuing and returning the answer scripts providing
-                    feedback on performance<br><input type="radio" name="question5">Excellent<input type="radio"
-                        name="question5">Very Good<input type="radio" name="question5">Good<input type="radio"
-                        name="question5">Average<input type="radio" name="question5">Poor</div>
-                <div class="question">Q. Teacher comes well planned and prepared:<br><input type="radio"
+                <div class="question"><img onclick="img(4)" src="images/editques.png" width="25px" height="auto"><span
+                        class="span">Does the teacher
+                        observe continuously how all the groups are performing and suggest corrections
+                        ?</span><br><input type="radio" name="question4">Excellent<input type="radio"
+                        name="question4">Very Good<input type="radio" name="question4">Good<input type="radio"
+                        name="question4">Average<input type="radio" name="question4">Poor</div>
+                <div class="question"><img onclick="img(5)" src="images/editques.png" width="25px" height="auto"><span
+                        class="span">Does the teacher
+                        Scrupoutously check your results and ananlysis ?</span><br><input type="radio"
+                        name="question5">Excellent<input type="radio" name="question5">Very
+                    Good<input type="radio" name="question5">Good<input type="radio" name="question5">Average<input
+                        type="radio" name="question5">Poor</div>
+                <div class="question"><img onclick="img(6)" src="images/editques.png" width="25px" height="auto"><span
+                        class="span">Does the teacher
+                        evaluate your lab work and award grade/marks ?</span><br><input type="radio"
                         name="question6">Excellent<input type="radio" name="question6">Very Good<input type="radio"
                         name="question6">Good<input type="radio" name="question6">Average<input type="radio"
                         name="question6">Poor</div>
-                <div class="question">Q. Teacher provide Example of the concepts/principles, explanation are done
-                    effectively:<br><input type="radio" name="question7">Excellent<input type="radio"
-                        name="question7">Very Good<input type="radio" name="question7">Good<input type="radio"
-                        name="question7">Average<input type="radio" name="question7">Poor</div>
-                <div class="question">Q. Teacher encourages Qestioning/raising doubts by students and answer them
-                    well:<br><input type="radio" name="question8">Excellent<input type="radio" name="question8">Very
-                    Good<input type="radio" name="question8">Good<input type="radio" name="question8">Average<input
-                        type="radio" name="question8">Poor</div>
-                <div class="question">Q. Teacher engages classes reguraly and maintain discipline:<br><input
-                        type="radio" name="question9">Excellent<input type="radio" name="question9">Very Good<input
-                        type="radio" name="question9">Good<input type="radio" name="question9">Average<input
-                        type="radio" name="question9">Poor</div>
-                <div class="question">Q. Teacher covers syllabus completely at appropriate space:<br><input type="radio"
-                        name="question10">Excellent<input type="radio" name="question10">Very Good<input type="radio"
-                        name="question10">Good<input type="radio" name="question10">Average<input type="radio"
-                        name="question10">Poor</div>
+                <div class="question"><img onclick="img(7)" src="images/editques.png" width="25px" height="auto"><span
+                        class="span">Does the teacher
+                        tells the applicability of practicals in Industires ?</span><br><input type="radio"
+                        name="question7">Excellent<input type="radio" name="question7">Very Good<input type="radio"
+                        name="question7">Good<input type="radio" name="question7">Average<input type="radio"
+                        name="question7">Poor</div>
+                <div class="question"><img onclick="img(8)" src="images/editques.png" width="25px" height="auto"><span
+                        class="span">Overall rating of
+                        teacher</span><br><input type="radio" name="question8">Outstanding<input type="radio"
+                        name="question8">Very Good<input type="radio" name="question8">Good<input type="radio"
+                        name="question8">Satisfactory
+                </div>
             </div>
             <div class="add">+</div>
         </div>
@@ -142,6 +150,11 @@
         }
         function clicked4(char) {
             dropdown4.innerHTML = char;
+        }
+        function img(number) {
+            var ques = document.getElementsByClassName("span");
+            var text = ques[number - 1].innerHTML;
+            ques[number - 1].innerHTML = "<input type='text' value=" + text + ">";
         }
     </script>
 </body>
