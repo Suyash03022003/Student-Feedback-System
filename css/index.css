@@ -175,6 +175,7 @@ a {
 #card5 {
     margin-top: 240px;
 }
+
 .cards {
     text-decoration: none;
     color: black;
@@ -190,6 +191,7 @@ a {
     transition: 0.5s;
     border: 2px solid #102543;
 }
+
 .cards:hover {
     box-shadow: 0px 5px 10px #102543;
     transform: scale(1.05, 1.05);
