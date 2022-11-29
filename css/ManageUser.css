@@ -146,12 +146,7 @@ a:hover .active link {
   color: rgb(5, 5, 5);
 }
 
-p {
-  font-size: 20px;
-  padding: 12px;
-  background-color: #F5F5F5;
-  color: #428BCA;
-}
+
 
 .User {
   background-color: #102543;
@@ -160,20 +155,20 @@ p {
   height: 12%;
 }
 
-.filter {
+/* .filter {
   margin-left: 1%;
   padding-top: 1.8%;
   font-size: 20px;
   color: white;
-}
+} */
 
-option {
+/* option {
   background-color: #f4eaea;
   font-size: 22px;
   padding-left: 25%;
-}
+} */
 
-#User {
+/* #User {
   font-size: 20px;
   background-color: #a1ccf2;
   border: none;
@@ -183,7 +178,7 @@ option {
 
 #Branch {
   padding-left: 13%;
-}
+} */
 
 h2 {
   color: white;
@@ -223,4 +218,67 @@ button:hover {
   background-color: #428BCA;
   transform: scale(1.02);
   transition: 0.4s;
+}
+
+
+
+.options {
+  margin-top: 10px;
+  padding-left: 9px;
+  width: 100%;
+  background-color: #0a223d;
+}
+
+.option {
+  display: inline-block;
+  margin: 15px 5px;
+  padding: 12px;
+  color: white;
+  /* background-color: rgba(41, 87, 137, 0.6); */
+  width: 23%;
+}
+
+.drop {
+  position: absolute;
+  display: none;
+  margin: 10px -10px;
+  width: 17%;
+  z-index: 1000;
+  transition: 0.5s;
+  background-color:#008CFF;
+}
+
+.option:hover .drop {
+  display: block;
+  transition: 0.5s;
+}
+
+.drop p {
+  padding: 10px;
+}
+
+.drop p:hover {
+  color: black;
+  background-color: #F5F5F5;
+} 
+
+.head {
+  color:white;
+  margin-bottom: 1px;
+  border-radius: 5px;
+  font-size: 16px;
+  
+}
+.s1 {
+  font-size: 20px;
+  padding: 12px;
+  background-color: #F5F5F5;
+  color: #428BCA;
+}
+.head{
+  font-size: 16px;
+  padding: 8px;
+  background-color: rgba(41, 87, 137, 0.6);
+  /* background-color: #F5F5F5; */
+  color: white;
 }

@@ -33,15 +33,15 @@
         <li><a href="Subject.html">Subject</a></li>
         <li><a href="GFeedback.html">Generate Feedback</a></li>
         <li><a href="VFeedback.html">View Feedback</a></li>
-    </ul>
+      </ul>
     </div>
     <div class="right">
       <h1>Manage User</h1>
       <br>
-      <p>Dashboard/Manage User</p>
+      <p class="s1">Dashboard/Manage User</p>
       <br>
       <div class="User">
-        <div class="Filter">
+        <!-- <div class="Filter">
           <div>
             <label for="User">Select User:</label>
             <select name="User" id="User">
@@ -57,7 +57,32 @@
               <option value="Student">Civil</option>
             </select>
           </div>
-        </div>
+        </div> -->
+
+        <div class="options">
+          <div class="option" id="option">
+              <!-- <p class="head">YEAR:</p> -->
+              <p  class="head" class="dropdown" id="dropdown1">Year <br>Select:</p>
+              <div class="drop" id="drop">
+                  <p onclick="clicked1('I')">I</p>
+                  <p onclick="clicked1('II')">II</p>
+                  <p onclick="clicked1('III')">III</p>
+                  <p onclick="clicked1('IV')">IV</p>
+              </div>
+          </div>
+          <div class="option" id="option">
+              <!-- <p class="head">Branch:</p> -->
+              <p class="head" class="dropdown" id="dropdown2">Branch <br>Select:</p>
+              <div class="drop" id="drop">
+                  <p onclick="clicked2('Computer')">Computer</p>
+                  <p onclick="clicked2('Electrical')">Electrical</p>
+                  <p onclick="clicked2('Mechanical')">Mechanical</p>
+                  <p onclick="clicked2('Civil')">Civil</p>
+              </div>
+          </div>
+          </div>
+
+
         <table>
           <tr>
             <th>Name</th>
