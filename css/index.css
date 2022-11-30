@@ -22,12 +22,12 @@ body {
 .nav .img {
     transition: 0.5s;
     margin-left: 2%;
-    display: flex;
     padding: 1%;
+    text-align: center;
     height: 100%;
     float: left;
     width: 8%;
-    align-items: center;
+    
 }
 
 #img {
@@ -35,7 +35,8 @@ body {
 }
 
 .nav .img img {
-    width: 100%;
+    width: auto;
+    height: 100%;
 }
 
 .nav h2 {

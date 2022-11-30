@@ -22,7 +22,7 @@ function loaded() {
     var heading = document.getElementById("heading");
     var carousel = document.getElementById("carousel");
     if (pageYOffset >= length) {
-        img.style.width = "60%";
+        img.style.height = "95%";
         ele.style.backgroundColor = "#102543";
         heading.style.color = "white";
         heading.style.height = "70px";
@@ -34,7 +34,7 @@ function loaded() {
         carousel.style.paddingBottom = "100px";
     }
     else {
-        img.style.width = "100%";
+        img.style.height = "100%";
         heading.style.height = "100px";
         ele.style.height = "100px";
         ele.style.backgroundColor = "white";
