@@ -78,57 +78,20 @@ body {
     font-weight: bold;
 }
 
-.mySlides {
-    width: 100%;
-    height: 500px;
-}
-
 .spaces {
     height: 70px;
 }
 
-.img {
-    
-}
-
-.carousel {
-    box-shadow: 0px 1px 15px #102543;
-    width: 100%;
+.image {
     height: 500px;
-    transition: 0.9s;
-    margin: -30%;
 }
 
-.mySlides img {
+.image img {
+    margin-left: -90%;
+    opacity: 0;
+    box-shadow: 0px 2px 10px #102543;
     object-fit: cover;
-}
-
-.mySlides {
-    display: none
-}
-
-img {
-    vertical-align: middle;
-}
-
-.mySlides {
-    position: relative;
-    margin: auto;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 2.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4;
-    }
-
-    to {
-        opacity: 1;
-    }
+    transition: 0.7s;
 }
 
 .main {
@@ -142,7 +105,7 @@ img {
     margin-top: 80px;
     margin-bottom: 20px;
     text-align: center;
-    font-size: 35px;
+    font-size: 10px;
     font-weight: bold;
     transition: 0.5s;
 }
@@ -186,6 +149,7 @@ a {
     color: black;
     font-size: 25px;
     border-radius: 20px;
+    opacity: 0;
     background-color: #F3FCFF;
     text-align: center;
     margin: 20px;
