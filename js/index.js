@@ -6,8 +6,8 @@ function load() {
 
 function loaded() {
     let length = 100;
-    let length1 = 320;
-    let length2 = 500;
+    let length1 = 200;
+    let length2 = 350;
     let length3 = 700;
     let length4 = 900;
     var img = document.getElementById("img");
