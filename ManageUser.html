@@ -38,7 +38,7 @@
     <div class="right">
       <h1>Manage User</h1>
       <br>
-      <p class="s1">Dashboard/Manage User</p>
+      <p class="s1">Dashboard/<span>Manage User</span></p>
       <br>
       <div class="User">
         <!-- <div class="Filter">
@@ -61,8 +61,8 @@
 
         <div class="options">
           <div class="option" id="option">
-              <!-- <p class="head">YEAR:</p> -->
-              <p  class="head" class="dropdown" id="dropdown1">Year <br>Select:</p>
+              <p class="head">Year:</p>
+              <p class="dropdown" id="dropdown1">Select</p>
               <div class="drop" id="drop">
                   <p onclick="clicked1('I')">I</p>
                   <p onclick="clicked1('II')">II</p>
@@ -71,8 +71,8 @@
               </div>
           </div>
           <div class="option" id="option">
-              <!-- <p class="head">Branch:</p> -->
-              <p class="head" class="dropdown" id="dropdown2">Branch <br>Select:</p>
+              <p class="head">Branch:</p>
+              <p class="dropdown" id="dropdown2">Select</p>
               <div class="drop" id="drop">
                   <p onclick="clicked2('Computer')">Computer</p>
                   <p onclick="clicked2('Electrical')">Electrical</p>
@@ -80,8 +80,7 @@
                   <p onclick="clicked2('Civil')">Civil</p>
               </div>
           </div>
-          </div>
-
+        </div>
 
         <table>
           <tr>
@@ -136,6 +135,16 @@
         <button>Add User</button>
       </div>
     </div>
+    <script>
+      var dropdown = document.getElementById("dropdown1");
+      var dropdown = document.getElementById("dropdown2");
+      function clicked1(char) {
+          dropdown1.innerHTML = char;
+      }
+      function clicked2(char) {
+          dropdown2.innerHTML = char;
+      }
+  </script>
 </body>
 
 </html>
